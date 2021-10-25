@@ -1,0 +1,225 @@
+/*  HERO SECTION */
+section.hero {
+  background-color: var(--jussi-green);
+  padding: 40px;
+  position: relative;
+}
+
+section.hero > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section.hero h1 {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  max-width: 450px;
+}
+
+section.hero p {
+  max-width: 330px;
+  margin: 1rem 0 2rem 0;
+}
+
+.hero-products {
+  display: flex;
+  column-gap: 42px;
+  position: relative;
+}
+
+.hero-product {
+  background: #fff;
+  width: 210px;
+  height: 270px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid #f2f2f2;
+  box-sizing: border-box;
+  box-shadow: 0px 32px 32px rgba(0, 0, 0, 0.25);
+}
+
+.hero-product:nth-child(1) {
+  margin-top: 156px;
+}
+
+.hero-product:nth-child(2) {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.hero-product:nth-child(3) {
+  margin-top: 210px;
+}
+
+.hero-product a {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  padding: 12px 24px;
+  color: var(--pink);
+  border: 1px solid var(--pink);
+  border-radius: 30px;
+  position: absolute;
+  bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.hero-product a:hover {
+  color: #fff;
+  background: var(--pink);
+}
+
+/* PRINCIPAIS LOJAS */
+.principais-lojas {
+  padding: 20px 0px;
+  background: #f2f2f2;
+}
+
+.principais-lojas > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* SOLUÇÕES */
+section.solucoes {
+  padding: 3.5rem 0;
+}
+
+section.solucoes h2 span {
+  color: var(--jussi-green);
+}
+
+section.solucoes .products-box {
+  margin-top: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* SEÇÃO SOBRE  A JUSSI */
+section.sobre {
+  background-image: url(./assets/fundo-sobre-jussi.jpg);
+  padding: 4rem 0;
+}
+
+section.sobre > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+section.sobre h2,
+section.sobre p {
+  max-width: 240px;
+}
+
+section.sobre p {
+  margin: 1.5rem 0;
+}
+
+/* SEÇÃO DE CONTATO */
+section.contato {
+  background: var(--pink);
+  width: 100%;
+  height: 480px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.contato p {
+  margin-top: 2rem;
+}
+
+section.contato h2:last-child {
+  text-transform: none;
+}
+
+/* Newsletter */
+section.newsletter {
+  background: #000000;
+  width: 100%;
+  height: 436px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+section.newsletter form {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  position: relative;
+}
+
+section.newsletter form input {
+  width: 100%;
+  max-width: 500px;
+  padding: 1.25rem 0;
+  border: none;
+  border-bottom: 1px solid #03ffa5;
+  background: transparent;
+  color: #fff;
+}
+
+section.newsletter form input::placeholder {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+section.newsletter form button {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 0;
+
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  color: var(--jussi-green);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* RODAPÉ */
+footer {
+  background-color: #000000;
+  padding: 1.5rem 0;
+}
+
+footer > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .social-icons {
+  display: flex;
+  column-gap: 1rem;
+}
+
+footer .social-icons svg {
+  font-size: 1.5rem;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+footer .social-icons svg:hover {
+  color: var(--jussi-green);
+}

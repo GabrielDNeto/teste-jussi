@@ -1,0 +1,113 @@
+header {
+  width: 100%;
+  background: #fff;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .left_header {
+  display: flex;
+  align-items: center;
+}
+
+header .left_header nav {
+  margin-left: 2rem;
+}
+
+header .left_header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+header a {
+  padding: 1rem;
+  color: #000;
+  font-weight: 500;
+  line-height: 1.5rem;
+  transition: 0.3s ease;
+}
+
+header a:hover:not(last-child) {
+  text-decoration: underline;
+}
+
+header .right_header {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+header .right_header input {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: var(--pink);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  border: 1px solid #f2f2f2;
+}
+
+header .right_header input::placeholder {
+  color: var(--pink);
+  font-weight: 500;
+}
+
+header .right_header form {
+  position: relative;
+  margin-right: 1rem;
+}
+
+header .right_header form button {
+  font-size: 1.5rem;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 1rem;
+  transition: all 0.3s ease;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+header .right_header .cartIcon svg {
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+header .right_header svg:hover {
+  color: var(--pink);
+}
+
+header .right_header .resultados-pesquisa {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #fff;
+  max-height: 400px;
+  max-width: 300px;
+  z-index: 100;
+  overflow-y: scroll;
+}
+
+header .right_header .resultados-pesquisa li {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+header .right_header .resultados-pesquisa li:not(last-child) {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+header .right_header .resultados-pesquisa button.fehcar-pesquisa {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
